@@ -67,8 +67,12 @@ static NSArray *gravities = nil;
     self.windowView.layer.contentsGravity = gravities[sender.selectedSegmentIndex];
 }
 
+- (IBAction)geometryFlippedChanged:(UISwitch *)sender {
+    self.windowView.layer.geometryFlipped = sender.on;
+}
+
 - (IBAction)masksToBoundsChanged:(UISwitch *)sender {
-    self.windowView.layer.masksToBounds =     sender.on;
+    self.windowView.layer.masksToBounds = sender.on;
 }
 
 - (IBAction)imageChanged:(UISegmentedControl *)sender {
