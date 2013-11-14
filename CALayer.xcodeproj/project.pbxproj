@@ -21,6 +21,8 @@
 		93AA5E2418349810005153AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93AA5E0618349810005153AA /* UIKit.framework */; };
 		93AA5E2C18349810005153AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93AA5E2A18349810005153AA /* InfoPlist.strings */; };
 		93AA5E2E18349811005153AA /* CALayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AA5E2D18349810005153AA /* CALayerTests.m */; };
+		93AA5E391834AF0F005153AA /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AA5E381834AF0F005153AA /* grid.png */; };
+		93AA5E3C1834BEAC005153AA /* grid64.png in Resources */ = {isa = PBXBuildFile; fileRef = 93AA5E3B1834BEAC005153AA /* grid64.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		93AA5E2918349810005153AA /* CALayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CALayerTests-Info.plist"; sourceTree = "<group>"; };
 		93AA5E2B18349810005153AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93AA5E2D18349810005153AA /* CALayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALayerTests.m; sourceTree = "<group>"; };
+		93AA5E371834AED4005153AA /* grid.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = grid.xcf; sourceTree = "<group>"; };
+		93AA5E381834AF0F005153AA /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid.png; sourceTree = "<group>"; };
+		93AA5E3A1834BE8A005153AA /* grid64.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = grid64.xcf; sourceTree = "<group>"; };
+		93AA5E3B1834BEAC005153AA /* grid64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid64.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,10 @@
 		93AA5E0918349810005153AA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				93AA5E3B1834BEAC005153AA /* grid64.png */,
+				93AA5E3A1834BE8A005153AA /* grid64.xcf */,
+				93AA5E381834AF0F005153AA /* grid.png */,
+				93AA5E371834AED4005153AA /* grid.xcf */,
 				93AA5E0A18349810005153AA /* CALayer-Info.plist */,
 				93AA5E0B18349810005153AA /* InfoPlist.strings */,
 				93AA5E0E18349810005153AA /* main.m */,
@@ -228,7 +238,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93AA5E3C1834BEAC005153AA /* grid64.png in Resources */,
 				93AA5E1B18349810005153AA /* Images.xcassets in Resources */,
+				93AA5E391834AF0F005153AA /* grid.png in Resources */,
 				93AA5E0D18349810005153AA /* InfoPlist.strings in Resources */,
 				93AA5E1618349810005153AA /* Main.storyboard in Resources */,
 			);
