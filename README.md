@@ -1,4 +1,4 @@
-iOSCALayer
+CALayer
 ==========
 
 CALayerクラスのプロパティを理解するために作ったサンプルです。
