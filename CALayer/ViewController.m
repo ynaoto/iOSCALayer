@@ -29,6 +29,12 @@ static NSArray *gravities = nil;
     self.anchorYLabel.text = [NSString stringWithFormat:@"%f", layer.anchorPoint.y];
 }
 
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    NSLog(@"%s", __FUNCTION__);
+    [self updateAnchorLabels];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -54,7 +60,11 @@ static NSArray *gravities = nil;
     }
     layer.contentsGravity = gravities[0];
     layer.contents = (id)((UIImage*)images[0]).CGImage;
-    [self updateAnchorLabels];
+    [self.windowView.layer addObserver:self
+                            forKeyPath:@"anchorPoint"
+                               options:NSKeyValueObservingOptionInitial|NSKeyValueObservingOptionNew
+                               context:nil];
+//    [self updateAnchorLabels];
 }
 
 - (void)didReceiveMemoryWarning
@@ -83,14 +93,14 @@ static NSArray *gravities = nil;
     CGPoint p = self.windowView.layer.anchorPoint;
     p.x = sender.value;
     self.windowView.layer.anchorPoint = p;
-    [self updateAnchorLabels];
+//    [self updateAnchorLabels];
 }
 
 - (IBAction)anchorYChanged:(UISlider *)sender {
     CGPoint p = self.windowView.layer.anchorPoint;
     p.y = sender.value;
     self.windowView.layer.anchorPoint = p;
-    [self updateAnchorLabels];
+//    [self updateAnchorLabels];
 }
 
 @end
